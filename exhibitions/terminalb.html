@@ -2,13 +2,13 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>MalCorpse</title>
   </head>
   <body>
     <header class="header">
-      <a class="header__link" href="index.html">
-        <img class="header__logo" src="images/logo.jpg" alt="Логотип сайта MalCorpse">
+      <a class="header__link" href="../index.html">
+        <img class="header__logo" src="../images/logo.jpg" alt="Логотип сайта MalCorpse">
         <p class="header__desc">Отинов Юрий / Corpse Mal</p>
       </a>
       <nav class="header__nav nav-header">
@@ -56,36 +56,31 @@
         </ul>
       </div>
     </header>
-    <main class="main masks-main">
+    <main class="main exhibitions-main">
       <h1 class="visually-hidden">MalCorpse -- сайт Юрия Отинова</h1>
-      <section class="masks-main__section center-wrapper">
-        <h2 class="main__heading masks-main__heading">Masks</h2>
-        <p class="masks-main__text">Visit my mask shop</p>
-        <a class="masks-main__link" href="http://www.inspireuplift.com/shop/CorpseMalMasks">Link here</a>
-        <ul class="masks-main__list center-wrapper">
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/1.png" alt="Фото маски череп">
+      <section class="center-wrapper item-exhib">
+        <h3 class="item-exhib__header">
+        Terminal B
+        <time class="item-exhib__date" datetime="2022-07-12T00:00:00">7.12.2022</time>
+        </h3>
+        <p class="item-exhib__status">Коллективная выставка</p>
+        <label class="visually-hidden" for="artists">Показать художников</label>
+        <button class="item-exhib__button" type="button" id="artists" name="artists-button">
+          Художники
+          <div class="item-exhib__button-arrow"></div>
+        </button>
+        <div class="item-exhib__artists visually-hidden">
+          Andrei Beliaev, Evgeny Berezin, Vitaly Bezpalov, Ian Bruner, Michael Bussell, Arthur Golyakov, Egon Van Herreveghe, 
+          Miles Huston, Robert Khasanov, Taka Kono, KOTZ, Sasha Lemish, Stas Lobachevskiy, Yuri Otinov, PLAGUE, Pavel Polshchikov, Aurora Rodina, Zukhra Salakhova & Anastasia Yusypey, Ekaterina Serikova, Artem Silver, Daria Skripal, Anna Soz, Anna Taganzeva-Kobzeva, Nastya Vasileva, Vanya Venmer
+        </div>
+        <p class="item-exhib__curator">Куратор: Plague</p>
+        <p class="item-exhib__address">«Смена», г. Казань</p>
+        <ul class="item-exhib__list exhibitions-pictures__list">
+          <li class="exhibitions-pictures__item">
+            <img class="exhibitions-pictures__image" src="../images/exhibitions/terminal_b/1.jpg" alt="Экспонат на Terminal B">
           </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/2.png" alt="Фото маски гнилого розового трупа">
-          </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/3.png" alt="Фото маски гнилого синего трупа">
-          </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/4.png" alt="Фото маски гнилого синего трупа">
-          </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/5.png" alt="Фото маски гнилого фиолетового трупа">
-          </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/6.png" alt="Фото маски-черепа с подвижной челюстью">
-          </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/7.png" alt="Фото маски на заказ">
-          </li>
-          <li class="masks-main__item">
-            <img class="masks-main__image" src="images/masks/8.png" alt="Фото маски на заказ">
+          <li class="exhibitions-pictures__item">
+            <img class="exhibitions-pictures__image" src="../images/exhibitions/terminal_b/2.jpg" alt="Экспонат на Terminal B">
           </li>
         </ul>
       </section>
@@ -94,41 +89,41 @@
       <section class="main__categories categories">
         <ul class="categories__list">
           <li class="categories__item">
-            <a class="categories__link" href="bio.html">
+            <a class="categories__link" href="../bio.html">
               <div class="categories__img-wrapper">
-                <img class="categories__image" src="images/bio/cover.jpg" alt="Фото кота">
+                <img class="categories__image" src="../images/bio/cover.jpg" alt="Фото кота">
               </div>
               <span class="categories__name">Bio</span>
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="emojicore.html">
+            <a class="categories__link" href="../emojicore.html">
               <div class="categories__img-wrapper">
-                <img class="categories__image" src="images/emoji/cover.jpg" alt="Картинка из эмодзи">
+                <img class="categories__image" src="../images/emoji/cover.jpg" alt="Картинка из эмодзи">
               </div>
               <span class="categories__name">🐈Emoji Core🌈</span>
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="photos.html">
+            <a class="categories__link" href="../photos.html">
               <div class="categories__img-wrapper">
-                <img class="categories__image" src="images/photos/cover.png" alt="Фото">
+                <img class="categories__image" src="../images/photos/cover.png" alt="Фото">
               </div>
               <span class="categories__name">Photos</span>
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="exhibitions.html">
+            <a class="categories__link" href="../exhibitions.html">
               <div class="categories__img-wrapper">
-                <img class="categories__image" src="images/exhibitions/cover.png" alt="Фото с выставки">
+                <img class="categories__image" src="../images/exhibitions/cover.png" alt="Фото с выставки">
               </div>
               <span class="categories__name">Exhibitions</span>
             </a>
           </li>
           <li class="categories__item">
-            <a class="categories__link" href="masks.html">
+            <a class="categories__link" href="../masks.html">
               <div class="categories__img-wrapper">
-                <img class="categories__image" src="images/masks/1.png" alt="Фото маски">
+                <img class="categories__image" src="../images/masks/1.png" alt="Фото маски">
               </div>
               <span class="categories__name">Masks</span>
             </a>
@@ -136,6 +131,7 @@
         </ul>
       </section>
     </footer>
-    <script src="scripts/head-buttons.js" type="text/javascript"></script>
+    <script src="../scripts/head-buttons.js" type="text/javascript"></script>
+    <script src="../scripts/artists-buttons.js" type="text/javascript"></script>
   </body>
 </html>

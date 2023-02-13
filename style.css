@@ -1,0 +1,409 @@
+@font-face {
+  font-family: "PT Sans Regular";
+  src: local("PT Sans Regular"),
+       url(fonts/pt_sans_regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: local("PT Sans Bold"),
+       url(fonts/pt_sans_bold.ttf) format("truetype");
+}
+
+/*Общие*/
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  list-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+a:hover {
+  color: #0066FF;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #0066FF;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  /*clip-path: inset(100%);
+  clip: rect(0 0 0 0);*/
+  overflow: hidden;
+}
+
+.visible {
+  position: static;
+  width: 500px;
+  height: auto;
+  margin: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__heading {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+}
+
+.main {
+  margin-top: 28px;
+  margin-bottom: 100px;
+}
+
+/*Шапка*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  width: 200px;
+  height: auto;
+}
+
+.header__desc {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 10px;
+  letter-spacing: 1px;
+}
+
+.nav-header {
+  margin-top: 24px;
+}
+
+.nav-header__list {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-left: 11px;
+  margin-right: 11px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.interview-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item__links-item {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nav-item__link {
+  text-decoration: underline;
+}
+
+.nav-item__link:hover {
+  text-decoration: none;
+  background-color: #ffff00;
+  color: #000000;
+}
+
+/*Категории*/
+
+.categories__list {
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categories__item {
+  width: 31%;
+  margin-bottom: 50px;
+}
+
+.categories__item:nth-child(3n) {
+  margin-left: 3.5%;
+}
+
+.categories__item:nth-child(3n-2) {
+  margin-right: 3.5%;
+}
+
+.categories__link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories__img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 16vw;
+  overflow: hidden;
+}
+
+.categories__image {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.categories__name {
+  margin-top: 15px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}
+
+/*Страница Био*/
+
+.bio-main {
+  margin-top: 32px;
+}
+
+.bio-main__preview {
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.bio-main__text {
+  width: 600px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.bio-main__image {
+  width: 60%;
+}
+
+.masks-main__link {
+  text-decoration: underline;
+}
+
+/*Страница Эмоджи*/
+
+.emoji-main__text {
+  text-align: center;
+  width: 700px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.emoji-main__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.emoji-main__img {
+  width: 600px;
+  margin-bottom: 15px;
+}
+
+.emoji-main__preview-img {
+  width: 600px;
+}
+
+.emoji-main__img-name {
+  margin-bottom: 50px;
+}
+
+.emoji-main__img-name:last-child {
+  margin-bottom: 0px;
+}
+
+/*Страница Фото*/
+
+.photos-main__item {
+  margin-bottom: 30px;
+}
+
+.photos-main__item:last-child {
+  margin-bottom: 0px;
+}
+
+.photos-main__img {
+  width: 800px;
+}
+
+/*Страница Выставок*/
+
+.exhibitions__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.exhibitions__item:last-child {
+  margin-bottom: 0px;
+}
+
+.item-exhib * {
+  line-height: 1.5;
+}
+
+.item-exhib__date {
+  margin-left: 5px;
+}
+
+.item-exhib__button-arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  transform: rotate(45deg);
+}
+
+.artists-click {
+  transform: rotate(135deg);
+}
+
+.item-exhib__artists {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.item-exhib__link {
+  display: block;
+  width: 24%;
+  margin-top: 5px;
+  padding: 5px 8px 8px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.exhibition-link__arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 3px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  transform: rotate(45deg);
+}
+
+.item-exhib__photo {
+  margin-top: 15px;
+}
+
+/*Страница конкретной выставки*/
+.exhibitions-pictures__image {
+  margin-top: 20px;
+  width: 600px;
+}
+
+.preparat .exhibitions-pictures__image {
+  width: 700px;
+}
+
+/*Маски*/
+.masks-main__text,
+.masks-main__link {
+  line-height: 1.5;
+}
+
+.masks-main__link:hover {
+  text-decoration: none;
+  background-color: #ffff00;
+  color: #000000;
+}
+
+.masks-main__item {
+  margin-top: 30px;
+}
+
+.masks-main__image {
+  width: 800px;
+}
