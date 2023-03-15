@@ -1,0 +1,10 @@
+.photos-main__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.photos-main__img {
+  width: 800px;
+}

@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>MalCorpse</title>
   </head>
   <body>
@@ -139,6 +139,73 @@
         </ul>
       </section>
     </footer>
-    <script src="scripts/head-buttons.js" type="text/javascript"></script>
+    <!-- <div class="popup-wrapper">
+      <div class="exhibitions-popup popup">
+        <label class="visually-hidden" for="popup_close">Закрыть</label>
+        <button class="popup__close-button" id="popup_close" type="button" name="button"></button>
+        <div class="popup__buttons-wrapper">
+          <label class="visually-hidden" for="popup_left-arrow">Назад</label>
+          <button class="popup__arrow-left" id="popup_left-arrow" type="button" name="button">
+            <div class="arrow-left__inner"></div>
+          </button>
+          <label class="visually-hidden" for="popup_right-arrow">Вперёд</label>
+          <button class="popup__arrow-right" id="popup_right-arrow" type="button" name="button">
+            <div class="arrow-right__inner"></div>
+          </button>
+        </div>
+      </div>
+    </div>*/
+    <script type="text/javascript">
+      let images = document.querySelectorAll(".exhibitions-pictures__image");
+      let popup = document.querySelector(".popup-wrapper");
+      let left_arrow = document.querySelector(".popup__arrow-left");
+      let right_arrow = document.querySelector(".popup__arrow-right");
+      
+      let imagesArray = Array.from(images);
+      let cloneArrow = [];
+      
+      for (let i = 0; i < imagesArray.length; i++) {
+        let image2 = imagesArray[i].cloneNode(true);
+        cloneArrow.push(image2);
+      }
+      
+      for (let i = 0; i < imagesArray.length; i++) {
+        imagesArray[i].addEventListener("click", function() {
+          popup.style.display = "block";
+          left_arrow.insertAdjacentElement('afterend', cloneArrow[i]);
+        })
+        right_arrow.addEventListener("click", function() {
+          popup.replaceChild(cloneArrow[i+1], cloneArrow[i]);
+        });
+      }
+      
+      
+      let close_button = document.querySelector(".popup__close-button");
+      close_button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        let childs = popup.querySelectorAll("img");
+        for (let child of childs) {
+          child.remove();
+        }
+        popup.style.display = "none";
+      })
+      
+      for (let image of images) {
+        image.addEventListener("click", addImage(image));
+      }
+      
+      function addImage(img) {
+        popup.style.display = "block";
+        let image2 = img.cloneNode(true);
+        left_arrow.insertAdjacentElement('afterend', image2);
+      }
+      
+      right_arrow.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        image2.remove();
+        left_arrow.insertAdjacentElement('afterend', image2);
+      })
+      
+    </script>-->
   </body>
 </html>

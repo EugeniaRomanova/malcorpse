@@ -1,0 +1,26 @@
+.emoji-main__text {
+  text-align: center;
+  width: 700px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.emoji-main__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.emoji-main__img {
+  width: 600px;
+  margin-bottom: 15px;
+}
+
+.emoji-main__preview-img {
+  width: 600px;
+}
+
+.emoji-main__img-name {
+  margin-bottom: 50px;
+}

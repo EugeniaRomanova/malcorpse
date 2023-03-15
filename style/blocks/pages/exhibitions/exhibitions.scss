@@ -1,0 +1,11 @@
+.exhibitions__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 700px;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}

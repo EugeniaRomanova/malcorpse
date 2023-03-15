@@ -1,0 +1,194 @@
+@import "blocks/header/header.scss";
+@import "blocks/header/nav-header.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/visible.scss";
+@import "blocks/center-wrapper.scss";
+@import "blocks/main.scss";
+@import "blocks/categories.scss";
+@import "blocks/pages/bio.scss";
+@import "blocks/pages/emoji.scss";
+@import "blocks/pages/photos.scss";
+@import "blocks/pages/exhibitions/exhibitions.scss";
+@import "blocks/pages/exhibitions/itemexhib.scss";
+@import "blocks/pages/exhibitions/artistsclick.scss";
+@import "blocks/pages/exhibitions/exhibitionlink.scss";
+@import "blocks/pages/exhibitions/exhibition-item/preparat.scss";
+@import "blocks/pages/exhibitions/exhibition-item/exhibitions-pictures.scss";
+@import "blocks/pages/masks.scss";
+
+@font-face {
+  font-family: "PT Sans Regular";
+  src: local("PT Sans Regular"),
+       url('../fonts/pt_sans_regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: local("PT Sans Bold"),
+       url('../fonts/pt_sans_bold.ttf') format("truetype");
+}
+
+/*Общие*/
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  list-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  &:hover {
+    color: #0066FF;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #0066FF;
+    cursor: pointer;
+  }
+}
+
+h2 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1;
+}
+
+
+
+/*Просмотр галереи*/
+/*.popup-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.exhibitions-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+}
+
+.popup__close-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.popup__close-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 50px;
+  transform: rotate(45deg);
+  background-color: gray;
+}
+
+.popup__close-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 50px;
+  transform: rotate(-45deg);
+  background-color: gray;
+}
+
+.popup__close-button:hover::before,
+.popup__close-button:hover::after {
+  background-color: black;
+}
+
+.popup__buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.popup__arrow-right,
+.popup__arrow-left {
+  padding: 20px;
+  height: 80px;
+}
+
+.arrow-left__inner {
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  transform: rotate(-45deg);
+}
+
+.arrow-right__inner {
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  transform: rotate(45deg);
+}
+
+.popup__arrow-left:hover .arrow-left__inner {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.popup__arrow-right:hover .arrow-right__inner {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}*/

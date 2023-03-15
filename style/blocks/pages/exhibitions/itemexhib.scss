@@ -1,0 +1,36 @@
+.item-exhib * {
+  line-height: 1.5;
+}
+
+.item-exhib__date {
+  margin-left: 5px;
+}
+
+.item-exhib__button-arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-top: -10px;
+  margin-left: 5px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  transform: rotate(45deg);
+}
+
+.item-exhib__artists {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.item-exhib__link {
+  display: block;
+  width: 24%;
+  margin-top: 5px;
+  padding: 5px 8px 8px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.item-exhib__photo {
+  margin-top: 15px;
+}

@@ -1,0 +1,21 @@
+.masks-main__text,
+.masks-main__link {
+  line-height: 1.5;
+}
+
+.masks-main__link {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    background-color: #ffff00;
+    color: #000000;
+  }
+}
+
+.masks-main__item {
+  margin-top: 30px;
+}
+
+.masks-main__image {
+  width: 800px;
+}
